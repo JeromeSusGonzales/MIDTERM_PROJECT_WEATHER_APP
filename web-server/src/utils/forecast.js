@@ -2,7 +2,7 @@ const request = require('request')
 const forecast = (latitude, longitude, callback) => {
   const url = 'http://api.weatherstack.com/current?access_key=06258cf566e3f39de1d862a2c571cba9&query=/' + latitude + ',' + longitude + '&units=f'
 
-  request({url: url, json: true}, (error, {body} = {}) => {
+  request({url: url, json:true}, (error, {body} = {}) => {
       if (error){
 
          callback('Unable to connect to weather service!', undefined)
@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
           
       }else{
 
-        callback(undefined, body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + ' degress out. It feels like ' + body.current.feelslike + ' degress out.')
+        callback(undefined, body.location.localtime + '  ' + body.current.weather_descriptions[0] + ' ' + body.current.temperature + '  °C It feels like '  + body.current.feelslike +  '  °C' + '  ' + body.current.precip + '% of rain')
 
       }
 
