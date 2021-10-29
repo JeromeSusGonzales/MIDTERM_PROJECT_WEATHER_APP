@@ -5,8 +5,7 @@ body{
     max-width: 650px;
     margin:0 auto;
     padding:0 16px;
-    background:#fff;
-
+    background: linear-gradient(white,lightblue);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -27,6 +26,7 @@ footer p{
 header{
     margin-top:16px ;
     margin-bottom: 48px;
+    background: linear-gradient(white,lightblue);
 }
 h1{
     font-size: 64px;
@@ -36,13 +36,35 @@ h1{
 }
 header a{
     color: black;
-    margin-right: 16px;
+    margin-right: 20px;
     text-decoration: none;
     font-weight: 400;
+    font-family:'Poppins', sans-serif ;
+    font-size:24px;
 }
 .portrait{
     width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    position: absolute;
+    left: 40%;
+
 }
 .main-content{
     flex-grow:1;
+}
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+
+}
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background:lightskyblue;
+    color:black;
+    padding: 8px;
+}
+button:hover{
+    background:lightblue;
 }
