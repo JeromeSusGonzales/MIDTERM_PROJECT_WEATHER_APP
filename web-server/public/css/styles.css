@@ -5,7 +5,8 @@ body{
     max-width: 650px;
     margin:0 auto;
     padding:0 16px;
-    background: linear-gradient(to left,skyblue,violet,lightblue);
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -117,17 +118,20 @@ h4{
     text-align: center;
     margin-top:10px ;
     font-family:'Poppins', sans-serif ;
+    color:#fff ;
 }
 h5{
     text-align: center;
     margin-top:10px ;
     font-family:'Poppins', sans-serif ;
+    color: #fff;
 }
 .main-content{
     flex-grow:1;
 }
 .main-content p{
     text-align: center;
+    color: #fff;
 }
 input{
     border: 1px solid #cccccc;
@@ -156,21 +160,24 @@ button{
 button:hover{
     background:skyblue;
 }
-#message-1{
-   font-size: 18px;
+.box #message-1{
+   font-size: 20px;
    text-align: center;
    padding-top:36px ;
+   color:black ;
    font-family:'Poppins', sans-serif ;
 }
-#message-2{
+.box #message-2{
     font-size: 24px;
+    color: black;
     text-align: center;
+    font-family:'Poppins', sans-serif ;
 
  }
  .box{
     width: 650px;
     height: 450px;
-    background:whitesmoke;
+    background:#fff;
     opacity:30% ;
     border-radius: 25px;
  }
