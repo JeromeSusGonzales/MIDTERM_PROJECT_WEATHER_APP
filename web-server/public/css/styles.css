@@ -5,7 +5,7 @@ body{
     max-width: 650px;
     margin:0 auto;
     padding:0 16px;
-    background: linear-gradient(white, maroon);
+    background: linear-gradient(to left,skyblue,violet,lightblue);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -28,79 +28,133 @@ header{
     font-family:'Poppins', sans-serif;
     border-bottom: 1px solid black;
 }
+header nav{
+	position: relative;
+	width: 650px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+header nav a{
+	font-size: 15px;
+    font-family:'Poppins', sans-serif ;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+header nav .animation{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	background:skyblue;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+header nav a:nth-child(1){
+	width: 100px;
+}
+header nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+header nav a:nth-child(2){
+	width: 110px;
+}
+header nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+header nav a:nth-child(3){
+	width: 100px;
+}
+header nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+header nav a:nth-child(4){
+	width: 160px;
+}
+header nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+header nav a:nth-child(5){
+	width: 120px;
+}
+header nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
 h1{
     font-size: 64px;
     margin-bottom: 16px;
     align-items: center;
     text-align: center;
 }
-header a{
-    color: black;
-    padding-left:85px ;
-    text-decoration: none;
-    font-weight: 400;
-    font-family:'Poppins', sans-serif ;
-    font-size:24px;
-}
 .portrait{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50px;
     position: absolute;
-    left: 25%;
-    top: 30%;
+    left: 45%;
+    top: 35%;
 }
 h3{
     text-align: center;
     margin-top:10px ;
-    top:30%;
-    position: absolute;
-    left:45% ;
+    padding-top: 150px;
     font-family:'Poppins', sans-serif ;
 }
 h4{
     text-align: center;
     margin-top:10px ;
-    top:35%;
-    left: 45%;
-    position: absolute;
     font-family:'Poppins', sans-serif ;
 }
 h5{
     text-align: center;
     margin-top:10px ;
-    top:40%;
-    left: 45%;
-    position: absolute;
     font-family:'Poppins', sans-serif ;
 }
 .main-content{
     flex-grow:1;
 }
+.main-content p{
+    text-align: center;
+}
 input{
     border: 1px solid #cccccc;
+    opacity:80% ;
     border-radius:10px ;
     padding: 8px;
     font-size: 18px;
-   position: absolute;
-   left: 40%;
-   top:30% ;
+    font-family:'Poppins', sans-serif ;
+    position: absolute;
+    left: 40%;
+    top:31% ;
 
 }
 button{
     cursor: pointer;
     border: 1px solid #888888;
-    background:maroon;
+    background:linear-gradient(skyblue,lightblue);
     border-radius:10px ;
-    color:white;
+    color:black;
     font-size: 18px;
     padding: 8px;
     position: absolute;
     left: 59%;
-    top: 30%;
+    top:31%;
 }
 button:hover{
-    background:red;
+    background:skyblue;
 }
 #message-1{
    font-size: 18px;
@@ -113,4 +167,10 @@ button:hover{
     text-align: center;
 
  }
- 
+ .box{
+    width: 650px;
+    height: 450px;
+    background:whitesmoke;
+    opacity:30% ;
+    border-radius: 25px;
+ }
