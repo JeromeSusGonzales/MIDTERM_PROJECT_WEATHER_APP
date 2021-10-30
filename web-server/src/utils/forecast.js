@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
           
       }else{
 
-        callback(undefined, body.location.localtime + '/' + body.current.weather_descriptions[0] + '/' + body.current.temperature + ' °C It feels like '  + body.current.feelslike +  '  °C' + '  ' + body.current.precip + '% chance of rain')
+        callback(undefined, body.location.localtime + '/' + body.current.weather_descriptions[0] + '/' + body.current.temperature + ' °C It feels like '  + body.current.feelslike +  '  °C' + ' Outside' + body.current.precip + '% chance of rain')
 
       }
 
