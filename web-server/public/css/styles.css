@@ -160,24 +160,25 @@ button{
 button:hover{
     background:skyblue;
 }
-.box #message-1{
+ #message-1{
    font-size: 20px;
    text-align: center;
    padding-top:36px ;
    color:black ;
    font-family:'Poppins', sans-serif ;
 }
-.box #message-2{
-    font-size: 24px;
-    color: black;
-    text-align: center;
-    font-family:'Poppins', sans-serif ;
+ #message-2, #degree{
+    font-size: xxx-large;
+    font-weight: bold;
+}
 
- }
- .box{
-    width: 650px;
-    height: 450px;
-    background:#fff;
-    opacity:30% ;
-    border-radius: 25px;
- }
+#bigmessage p{
+    display: inline-block;
+    vertical-align: top;
+}
+#icon{
+    position: relative;
+    margin-top: 12px;
+    height: 65px;
+    
+}
